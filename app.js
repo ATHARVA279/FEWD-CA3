@@ -2,11 +2,13 @@ const foodName = document.getElementById('food-name')
 const specialDishImg = document.getElementById('today-img')
 const specialDishName = document.getElementById('sp-dish-name')
 const searchButton = document.getElementById('search-btn')
+const closeBtn = document.getElementsByClassName('close')
+const modal = document.getElementsByClassName('mid')
 
 
 // Viewing the data
 searchButton.onclick=()=>{
-        let name = foodName.value.trim()
+    let name = foodName.value.trim()
         console.log(name)
         async function getData(name) {
             try {
@@ -60,4 +62,9 @@ randomData()
 function displayRandom(data){
     specialDishName.innerText = `${data.strMeal}`
     specialDishImg.src = `${data.strMealThumb}`
+}
+
+closeBtn.onclick=()=>{
+    modal.style.display = none
+    console.log('jhi')
 }
