@@ -8,7 +8,11 @@
 }
 /* body */
 body{
-    background-color: 	#031206;
+    background-color: 	#0D0722;
+}
+
+h1{
+    text-align: center;
 }
 /* nav bar */
 nav{
@@ -19,42 +23,45 @@ nav{
     align-items: center;
 }
 
+
 #logo{
     padding: 10px;
     height: 60px;
 }
 
 .refresh{
-    padding: 10px;
+    padding: 10px 30px;
     display: flex;
     /* border: 1px solid red; */
     width: 300px;
     justify-content: space-between;
+    color: #E8E2F9;
 }
 
 /* Main section */
 section{
-    height: 80vh;
+    height: auto;
     margin: 10px 30px 30px 30px;
     border-radius: 10px;
-    background-color: #ADC1B0;
+    background-color: #A991E9;
     /* box-shadow: 0px 9px 58px 5px #AED2FF */
 }
 
 .main{
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .left{
-    height: 500px;
+    height: auto;
     width: 800px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px 0;
 }
 
 .right{
@@ -66,26 +73,42 @@ section{
     background-repeat: no-repeat;
 }
 
+.moto h1{
+    font-size: 60px;
+}
+
+.moto p{
+    font-size: 25px;
+    text-align: center;
+}
+
 /* Search Box */
 .search{
     display: flex;
+    margin: 20px 0;
+    width: 90%;
 }
 
 #food-name{
-    height: 20px;
-    width: 50%;
+    height: 50px;
+    width: 100%;
     outline: none;
     border: none;
+    font-size: 25px;
+    border-radius: 25px 0 0 25px;
+    padding: 20px;
+    background-color: #E8E2F9;
 }
 
 #search-btn{
-    height: 20px;
-    width: 20px;
-    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    background-color: #E8E2F9;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-radius: 0 25px 25px 0;
 }
 
 #search-btn:hover{
@@ -94,20 +117,39 @@ section{
 
 
 .options{
-    height: 100px;
-    width: 90%;
-    border: 1px red solid;
+    height: auto;
+    width: auto;
+    background-color: #E8E2F9;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.options h1{
+    font-size: 40px;
 }
 
 .categories-opt{
-    height: 30px;
-    width: 90px;
-    border: 1px red solid;
+    height: 50px;
+    width: auto;
+    /* border: 1px red solid; */
+    border-radius: 10px;
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #701053;
+    color: white;
+    /* padding: 10px; */
+    cursor: pointer;
+}
+
+.categories-opt h2{
+    padding: 5px;
 }
 
 .opt-flex{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* Special Dish */
@@ -115,18 +157,22 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 90%;
-    border: 1px red solid;
+    height: 500px;
+    margin: 0 30px;
 }
 
 .special h1{
     text-align: center;
+    font-size: 50px;
+}
+
+.special{
+    height: auto;
 }
 
 .img-sp{
-    border: 1px solid red; 
     display: flex;
-    height: 100%;
+    height: 90%;
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -137,6 +183,7 @@ section{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 20px;
 }
 
 .sp-right{
@@ -144,8 +191,21 @@ section{
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.recipe h1{
+    height: 60px;
+    width: 200px;
+    font-size: 40px;
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    background-color: #E8E2F9;
+    cursor: pointer;
 }
 
 /* Searched food */
@@ -155,6 +215,8 @@ section{
 
 .searched-food h1{
     text-align: center;
+    font-size: 45px;
+    color: black;
 }
 
 .items-flex{
@@ -165,31 +227,36 @@ section{
 }
 
 .cards{
-    height: 300px;
-    width: 200px;
-    border: 1px red solid;
+    height: 500px;
+    width: 270px;
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
     margin: 20px;
     display: grid;
+    background-color: #A6D9A2;
 }
 
 #res-img{
-    width: 200px;
+    width: 230px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
 }
 
 .go-btn{
-    height: 20px;
-    width: 100px;
-    background-color: beige;
+    height: 40px;
+    width: 110px;
+    background-color: #E8E2F9;
     justify-self: center;
     cursor: pointer;
+    border-radius: 10px;
+    color: black;
 }
 .go-btn h1{
-    font-size: 15px;
+    font-size: 25px;
+    color: black;
 }
-
 /* Modal */
 .mid{
     position: fixed;
@@ -206,9 +273,8 @@ section{
 }
 
 .middle{
-    height: 400px;
-    width: 600px;
-    /* border: 1px red solid; */
+    height: auto;
+    width: auto;
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
@@ -216,9 +282,10 @@ section{
     display: grid;
     background-color: #9B7B87;
     position: relative;
+    z-index: 999;
 }
 
-.close{
+#close{
     height: 20px;
     width: 20px;
     background-color: #fff;
@@ -231,6 +298,16 @@ section{
     z-index: 9999;
 }
 
-.close:hover{
+#close:hover{
     background-color: blue;
+}
+
+#h1{
+    font-size: 30px;
+}
+
+#h2{
+    font-size: 30px;
+    width: 300px;
+    margin: 0 30px;
 }

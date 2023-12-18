@@ -2,8 +2,15 @@ const foodName = document.getElementById('food-name')
 const specialDishImg = document.getElementById('today-img')
 const specialDishName = document.getElementById('sp-dish-name')
 const searchButton = document.getElementById('search-btn')
-const closeBtn = document.getElementsByClassName('close')
-const modal = document.getElementsByClassName('mid')
+const closeBtn = document.getElementById('close')
+const modal = document.querySelector('.mid')
+
+const seafood = document.getElementById('Seafood')
+const breakfast = document.getElementById('Breakfast')
+const Vegetarian = document.getElementById('Vegetarian')
+const Side = document.getElementById('Side')
+const Pasta = document.getElementById('Pasta')
+const Dessert = document.getElementById('Dessert')
 
 
 // Viewing the data
