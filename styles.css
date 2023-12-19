@@ -374,3 +374,10 @@ li{
         display: none;
     }
 }
+
+@media screen and (max-width: 520px){
+    .items-flex{
+        justify-content: center;
+    }
+    
+}
