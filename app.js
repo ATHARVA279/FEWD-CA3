@@ -81,3 +81,63 @@ function fetchData(foodCategory, inputBox) {
     getData(foodCategory)
 }
 
+function displayData(data) {
+    const itemsFlex = document.querySelector(".items-flex")
+    itemsFlex.innerHTML = ""
+
+    data.forEach((ele)=>{
+        let card = document.createElement('div')
+        card.className = 'cards'
+        card.innerHTML = `
+            <img src="${ele.strMealThumb}" id="res-img">
+            <h1 id="h1">${ele.strMeal}</h1>
+            <div class="go-btn">
+                <h1 class="recipe-btn" data-mealid="${ele.idMeal}">Recipe</h1>
+            </div>
+        `
+
+        itemsFlex.appendChild(card);
+    })
+
+    document.querySelectorAll('.recipe-btn').forEach(button=>{
+        button.addEventListener('click',()=>{
+            const mealId = button.getAttribute('data-mealid');
+            createRecipe(mealId)
+        })
+    })
+}
+
+recipeButton.addEventListener('click',()=>{
+    modal.style.display = 'flex'
+})
+
+async function createRecipe(id,showModal=true) {
+    try {
+        let response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`)
+        }
+        let data = await response.json()
+
+        if (data.meals && data.meals.length > 0) {
+            document.getElementById('h2').textContent = data.meals[0].strMeal
+
+            let ingredientsList = document.getElementById('list')
+            ingredientsList.innerHTML = ''
+
+            for (let i = 1; i <= 25; i++) {
+                let ingredient = data.meals[0][`strIngredient${i}`]
+                if (ingredient) {
+                    let listItem = document.createElement('li')
+                    listItem.textContent = `${ingredient}`
+                    ingredientsList.appendChild(listItem)
+                }
+            }
+            if (showModal) {
+                modal.style.display = 'flex'
+            }
+        }
+    } catch (err) {
+        console.error(err)
+    }
+}
