@@ -67,8 +67,7 @@ section{
 .right{
     height: 300px;
     width: 500px;
-    /* border: 1px solid black; */
-    background-image: url(./Assets/b-2.png);
+    background-image: url(./Assets/pizza-1.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -252,6 +251,7 @@ section{
     cursor: pointer;
     border-radius: 10px;
     color: black;
+    /* z-index: 999; */
 }
 .go-btn h1{
     font-size: 25px;
@@ -269,7 +269,7 @@ section{
     align-content: center;
     background-color: rgba(0, 0, 0, 0.79);
     flex-wrap: wrap;
-    display: none;
+    display: none; 
 }
 
 .middle{
@@ -310,4 +310,12 @@ section{
     font-size: 30px;
     width: 300px;
     margin: 0 30px;
+}
+
+#refresh{
+    cursor: pointer;
+}
+
+#scrollButton{
+    cursor: pointer;
 }
