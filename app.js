@@ -19,7 +19,7 @@ const recipeButton = document.querySelector('.recipe')
 searchButton.onclick=()=>{
     let name = foodName.value.trim()
     console.log(name)
-    fetchData(name,foodName)
+    fetchData(name, foodName)
 }
 
 seafood.onclick=()=>fetchData('Seafood',foodName)
@@ -140,4 +140,35 @@ async function createRecipe(id,showModal=true) {
     } catch (err) {
         console.error(err)
     }
+}
+
+
+function changebg() {
+    const images = [
+        'url("./Assets/b-1.png")',
+        'url("./Assets/b-2.png")',
+        'url("./Assets/b-3.png")',
+        'url("./Assets/b-4.png")',
+        'url("./Assets/pizza-1.png")',
+    ]
+
+    const section = document.querySelector('.right')
+    const currentBgIndex = images.findIndex(bg=>section.style.backgroundImage.includes(bg))
+    const nextBgIndex = (currentBgIndex + 1) % images.length
+    const nextBg = images[nextBgIndex]
+    section.style.backgroundImage = nextBg
+}
+
+setInterval(changebg, 3000)
+
+
+//Refresh
+refresh.onclick=()=>{
+    window.location.reload()
+}
+
+
+scroll.onclick=()=>{
+    const targetDiv = document.getElementById('targetDiv')
+    targetDiv.scrollIntoView({ behavior: 'smooth' })
 }
