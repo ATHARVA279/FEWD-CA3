@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
     <!-- NAV-BAR -->
@@ -16,8 +18,8 @@
         </div>
 
         <div class="refresh">
-            <h1>Today's Dish</h1>
-            <h1>Refresh</h1>
+            <h1 id="scrollButton">Today's Dish</h1>
+            <h1 id="refresh">Refresh</h1>
         </div>
     </nav>
 
@@ -25,13 +27,14 @@
     <section>
         <div class="main">
             <div class="left">
-                <!-- name section -->
+                <!-- Name section -->
                 <div class="moto">
                     <h1>SPICE SAFARI</h1>
                     <p>Thinking what to make??</p>
                     <p>Explore, Search, and Savor the World of Flavor!</p>
                 </div>
-                <!-- search section -->
+
+                <!-- Search section -->
                 <div class="search">
                     <input type="text" required id="food-name" placeholder="Seafood">
                     <div id="search-btn">
@@ -39,9 +42,9 @@
                     </div>
                 </div>
 
-                <!-- options -->
+                <!-- Options -->
                 <div class="options">
-                    <h1>Some options to seach from :</h1>
+                    <h1>Some options to search from:</h1>
                     <div class="opt-flex">
                         <div class="categories-opt" id="Seafood"><h2>Seafood</h2></div>
                         <div class="categories-opt" id="Breakfast"><h2>Breakfast</h2></div>
@@ -56,9 +59,9 @@
             <div class="right">
             </div>
         </div>
-    </section >
-        
-    <section class='special'>
+    </section>
+
+    <section class='special' id="targetDiv">
         <h1>TODAY'S SPECIAL DISH</h1>
         <div class="sp-flex">
             <div class="img-sp">
@@ -69,21 +72,14 @@
                     <h1 id="sp-dish-name"></h1>
                 </div>
                 <div class="recipe">
-                    <h1 id="recipe">recipe</h1>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="searched-food">
-        <h1>YOUR SEARCHED ITEMS</h1>
+        <h1>YOUR SEARCHED ITEMS :</h1>
         <div class="items-flex">
-            <!-- <div class="cards">
-                <img src="./Assets/b-1.png" id="res-img">
-                <h1 id="h1">name of food</h1>
-                <div class="go-btn">
-                    <h1>View</h1>
-                </div> -->
         </div>
     </section>
 
@@ -95,10 +91,11 @@
             </div>
             <h1 id="h2">name of food</h1>
             <div class="ind">
-                <h1>Ingridients:</h1>
+                <h1>Ingredients:</h1>
                 <ul id="list">
-                    <li>onion</li>
                 </ul>
+            </div>
+        </div>
     </div>
 
 </body>

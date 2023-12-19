@@ -46,3 +46,38 @@ async function randomData() {
 }
 
 randomData()
+
+//viewing the random meal data
+function displayRandom(data){
+    specialDishName.innerText = `${data.strMeal}`
+    specialDishImg.src = `${data.strMealThumb}`
+
+    recipeButton.innerHTML = `<h1 class="recipe-btn" data-mealid="${data.idMeal}">Recipe</h1>`
+}
+
+closeBtn.onclick=()=>{
+    modal.style.display = 'none'
+    document.getElementById('h2').textContent = ''
+    document.getElementById('list').innerHTML = ''
+};
+
+function fetchData(foodCategory, inputBox) {
+    async function getData(foodCategory) {
+        try {
+            let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${foodCategory}`)
+            if(!response.ok){
+                throw new Error(`HTTP error! Status: ${response.status}`)
+            }
+            let data = await response.json()
+            console.log(data.meals)
+
+            displayData(data.meals)
+        } catch (err) {
+            console.error("Error fetching data:", err)
+        }
+    }
+    inputBox.value = foodCategory
+
+    getData(foodCategory)
+}
+
