@@ -1,6 +1,6 @@
 # FEWD-CA3
 
-You Can visit the website Here: SPICE SAFARI : 
+You Can visit the website Here: SPICE SAFARI : https://atharva279.github.io/FEWD-CA3/
 
 Thinking what to make??
 Explore, Search, and Savor the World of Flavor!
