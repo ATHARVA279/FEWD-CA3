@@ -18,20 +18,15 @@ On each food item there is a recipe button, when clicked it will show the ingred
 # Tech Stack Used : HTML, CSS, JAVASCRIPT, FIGMA.
 
 # Screens in the Website : 
-1. First Page of the Game : 
-![Alt text](<./Assets/Main Page.png>)
+1. First Page of the Website : 
+![Alt text](<./Assets/Main.png>)
 
-2. Instructions Page : 
-![Alt text](<./Assets/Instructions Page.png>)
+2. Featured Dish : 
+![Alt text](<./Assets/featured.png>)
 
-3. Story Page : 
-![Alt text](<./Assets/Story page.png>)
+3. Searched Dishes : 
+![Alt text](<./Assets/dish.png>)
 
-4. Enter NickName Page : 
-![Alt text](<./Assets/Name page.png>)
+4. Ingredients : 
+![Alt text](<./Assets/modal.png>)
 
-5. Main Game Page : 
-![Alt text](<./Assets/Game page.png>)
-
-6. Results Page : 
-![Alt text](<./Assets/Result Page.png>)

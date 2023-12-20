@@ -40,7 +40,7 @@ section{
     height: auto;
     margin: 10px 30px 30px 30px;
     border-radius: 10px;
-    background-color: #C1CDCD;
+    background-color: #a0b9b9;
     box-shadow: 5px 5px 25px ;
 }
 
@@ -327,7 +327,7 @@ section{
 footer{
     text-align: center;
     height: 50px;
-    background-color: #C1CDCD;
+    background-color: #a0b9b9;
     justify-content: center;
     display: flex;
     align-items: center;
