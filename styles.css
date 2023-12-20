@@ -279,7 +279,7 @@ section{
 }
 
 .middle{
-    height: auto;
+    height: 70%;
     width: auto;
     border-radius: 5px;
     overflow: hidden;
@@ -289,6 +289,8 @@ section{
     background-color: #9B7B87;
     position: relative;
     z-index: 999;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #close{
@@ -317,6 +319,17 @@ section{
 #h2{
     font-size: 40px;
     margin: 0 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 li{
